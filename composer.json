@@ -1,0 +1,8 @@
+{
+    "name": "kterziev/tcontrol-api",
+    "description": "Video streaming API",
+    "type": "project",
+    "require": {
+        "vakata/database": "^4.5"
+    }
+}
