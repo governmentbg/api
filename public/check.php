@@ -50,10 +50,6 @@ try {
             if (!strpos($mdm['info'], 'io.uslugi.streamer')) {
                 throw new RuntimeException('Липсва инсталация на SIK Streamer', 400);
             }
-            // $mdm['info'] = json_decode($mdm['info'], true);
-            // if (!isset($mdm['info']['kioskMode']) || !$mdm['info']['kioskMode']) {
-            //     throw new RuntimeException('Липсва киоск режим', 400);
-            // }
             $response = [ 'result' => 'OK' ];
         } catch (RuntimeException $e) {
             $response = [ 'result' => $e->getMessage() ];
